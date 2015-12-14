@@ -1,0 +1,13 @@
+{
+    "name": "how-to-ssq-signon",
+    "version": "1.0.0",
+    "description": "Source code for the SSQ signon how to articles.",
+    "main": "server.js",
+    "author": "Riviera Solutions - Piotr Wójcik",
+    "license": "MIT",
+    "repository": "https://github.com/ssqsignon/howto",
+    "dependencies": {
+        "express": "^4.13.3",
+        "serve-static": "^1.10.0"
+    }
+}
