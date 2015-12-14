@@ -5,6 +5,10 @@ var express = require('express'),
     port = 9901,
     app = express();
 
+app.get('/items', function (req, res) {
+    res.sendFile(path.join(__dirname, 'items.json'));
+});
+
 app.use('/app.js', serveStatic(path.join(__dirname, 'app.js')));
 
 app.get('*', function (req, res) {

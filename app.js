@@ -1,6 +1,13 @@
 angular.module('howtossqsignon', ['ngMaterial'])
-    .controller('mainCtrl', function($scope) {
+    .controller('mainCtrl', function($scope, $http) {
 
-        $scope.message = 'Hello World!';
+        getItems();
+
+        function getItems() {
+            $http.get('/items')
+                .success(function(result) {
+                    $scope.items = result.items;
+                });
+        }
 
     });
